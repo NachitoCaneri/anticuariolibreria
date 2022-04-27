@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.col {
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: end;
+}
+
+li {
+  padding: 1rem;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: end;
+}
+
+h1 {
+  text-transform: capitalize;
+  color: crimson;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.intro-p {
+  padding: 4rem 4rem 4rem 4rem;
+  margin: 10px 10px 10px 10px;
+  border: solid;
+  border-color: black;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+}
+
+.align {
+  text-align: center;
+  padding: 4rem;
+}
+
+.align-nosotros {
+  display: block;
+  justify-content: center;
+  width: 400px;
+  border: 1px solid #140101;
+}
+
+.marginbottom {
+  margin: 0 1.5rem 1rem 0;
+}
+
+.marginbottom-2 {
+  margin: 0 0.4rem 1rem 0;
+}
+
+.flex-container {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.img-guiacompra {
+  width: 100px;
+  margin: 10px;
+}
+
+.img-tienda {
+  width: 200px;
+}
+
+.img-nosotros {
+  width: 200px;
+  padding: 10px;
+}
+
+.flex-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shadow {
+  box-shadow: black;
+}
+
+/* Fieldset Nosotros */
+fieldset {
+  background-image: linear-gradient(80deg, crimson, rgb(250, 75, 75));
+  color: white;
+}
+
+.imglogo {
+  width: 120px;
+  height: 65px;
+  margin: 0 0 0 20px;
+}
+
+.containergrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+/* Tarjetas tienda */
+.cardtienda {
+  color: white;
+  background-image: url("https://unsplash.it/400");
+  background-size: cover;
+  padding: 1rem 0 0;
+  max-width: 280px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.cardtienda:hover,
+.cardtienda:focus-within {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+  background: linear-gradient(black, rgba(0, 0, 0, 0.5));
+}
+
+.card-content__title {
+  text-decoration: underline;
+  text-decoration-color: lightgray;
+}
+
+.card-content__body {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+
+  .cardtienda:hover .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: white;
+  color: black;
+}
+
+/* Media Q*/
+@media (max-width: 320px) {
+  h1 {
+    text-transform: capitalize;
+    color: crimson;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+  }
+
+  .align {
+    text-align: center;
+    padding: 0;
+  }
+
+  .fieldset {
+    padding: auto;
+    margin: auto;
+  }
+
+  .form {
+    padding: auto;
+  }
+
+  .marginbottom {
+    margin: auto;
+  }
+
+  .marginbottom-2 {
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding: 0;
+  }
+
+  .intro-p {
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+    border: solid;
+    border-color: black;
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  .imglogo {
+    display: none;
+  }
+
+  .img-tienda {
+    width: 350px;
+    padding: 10px;
+  }
+
+  .img-nosotros {
+    width: 350px;
+    padding: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  ul {
+    justify-content: end;
+  }
+}
