@@ -1,8 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "globales";
+@import "navbar";
+@import "footer";
 
 img {
   max-width: 100%;
@@ -21,30 +19,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  justify-content: end;
-}
-
-li {
-  padding: 1rem;
-}
-
-.nav-link:hover {
-  font-weight: bold;
-}
-
-.navbar-collapse {
-  justify-content: end;
-}
-
-.nav-link {
-  display: flex;
-  justify-content: end;
-}
-
 h1 {
   text-transform: capitalize;
   color: crimson;
@@ -53,13 +27,6 @@ h1 {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-footer {
-  background-color: crimson;
-  color: white;
-  text-align: center;
-  padding: 1.5rem 0;
 }
 
 .intro-p {

@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
-
-.col {
-  width: 100%;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +28,29 @@ li {
   justify-content: end;
 }
 
+footer {
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.col {
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 h1 {
   text-transform: capitalize;
   color: crimson;
@@ -53,13 +59,6 @@ h1 {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-footer {
-  background-color: crimson;
-  color: white;
-  text-align: center;
-  padding: 1.5rem 0;
 }
 
 .intro-p {
