@@ -10,8 +10,7 @@ ul {
   list-style-type: none;
   justify-content: end;
 }
-
-li {
+ul li {
   padding: 1rem;
 }
 
@@ -34,6 +33,32 @@ footer {
   padding: 1.5rem 0;
 }
 
+/* Mixin con parametro*/
+.img-guiacompra {
+  height: 10px;
+  width: 100px;
+}
+
+.img-tienda {
+  height: 25px;
+  width: 200px;
+}
+
+.img-nosotros {
+  height: 10px;
+  width: 200px;
+}
+
+/* cierro mixin parametro*/
+/* Abro mixin sin parametro */
+.flex-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* cierro mixin sin parametro */
 img {
   max-width: 100%;
 }
@@ -96,27 +121,6 @@ h1 {
 .flex-container {
   gap: 2rem;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.img-guiacompra {
-  width: 100px;
-  margin: 10px;
-}
-
-.img-tienda {
-  width: 200px;
-}
-
-.img-nosotros {
-  width: 200px;
-  padding: 10px;
-}
-
-.flex-index {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }

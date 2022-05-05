@@ -1,0 +1,32 @@
+/* Mixin con parametro*/
+@mixin sizes($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+.img-guiacompra {
+  @include sizes(100px, 10px);
+}
+
+.img-tienda {
+  @include sizes(200px, 25px);
+}
+
+.img-nosotros {
+  @include sizes(200px, 10px);
+}
+/* cierro mixin parametro*/
+
+/* Abro mixin sin parametro */
+@mixin flex-row-center-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-index {
+  @include flex-row-center-wrap;
+}
+
+/* cierro mixin sin parametro */
