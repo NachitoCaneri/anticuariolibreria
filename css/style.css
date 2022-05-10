@@ -87,10 +87,15 @@ h1 {
 }
 
 .intro-p {
-  padding: 4rem 4rem 4rem 4rem;
-  margin: 10px 10px 10px 10px;
   border: solid;
   border-color: black;
+  width: 500px;
+  height: 500px;
+}
+
+.mark {
+  background-color: crimson;
+  color: white;
 }
 
 .centrar {
